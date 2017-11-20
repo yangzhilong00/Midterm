@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_body"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/searchText"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/edittext_selector"
+            android:hint="请输入英雄全称"
+            android:inputType="text"
+            android:maxLength="8"
+            android:layout_weight="0.11" />
+
+        <Button
+            android:id="@+id/Search"
+            android:layout_width="48dp"
+            android:layout_height="47dp"
+            android:background="@drawable/search" />
+
+        <Button
+            android:id="@+id/Add"
+            android:layout_width="68dp"
+            android:layout_height="47dp"
+            android:background="#ffffff"
+            android:text="@string/add_hero" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_weight="0.70"
+        android:id="@+id/recycler_view"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
